@@ -1,1 +1,5 @@
-{"url":"https://sheet.best/api/sheets/ab2383be-38bc-44e3-9ef4-7a6e46b602fb","categories_url":"https://sheet.best/api/sheets/ab2383be-38bc-44e3-9ef4-7a6e46b602fb/tabs/categories","config_url":"https://sheet.best/api/sheets/ab2383be-38bc-44e3-9ef4-7a6e46b602fb/tabs/config"}
+{
+    "url":"https://script.google.com/macros/s/AKfycbzzTrISRvHZJ5RPwfc67OENPZVF4q4iwaUrrOzTSEYdIEDDsZQOwWqOVbSkqP3CywxW/exec?path=questions",
+    "categories_url":"https://script.google.com/macros/s/AKfycbzzTrISRvHZJ5RPwfc67OENPZVF4q4iwaUrrOzTSEYdIEDDsZQOwWqOVbSkqP3CywxW/exec?path=categories",
+    "config_url":"https://script.google.com/macros/s/AKfycbzzTrISRvHZJ5RPwfc67OENPZVF4q4iwaUrrOzTSEYdIEDDsZQOwWqOVbSkqP3CywxW/exec?path=config"
+}
