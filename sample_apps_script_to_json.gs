@@ -31,7 +31,7 @@ function convertToJson(data, parameters, cnt) {
 }
 function doGet(e) {
   const path = e.parameter.path
-  const cnt = e.parameter.cnt ? e.parameter.cnt : -1
+  const cnt = e.parameter.shuffle ? (e.parameter.cnt ? e.parameter.cnt : -1) : -1
   const params = e.parameters
   let parameters = {}
   for (const [key, value] of Object.entries(params)) {

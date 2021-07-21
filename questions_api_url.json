@@ -1,6 +1,6 @@
 {
-    "url":"https://script.google.com/macros/s/AKfycbzDx49eM6zZOkRJyVeA1fThohj4zU1GMEI5fGT7USUJRUA8netEglFSHqKS9cCWop1w/exec?path=questions",
-    "categories_url":"https://script.google.com/macros/s/AKfycbzDx49eM6zZOkRJyVeA1fThohj4zU1GMEI5fGT7USUJRUA8netEglFSHqKS9cCWop1w/exec?path=categories",
-    "config_url":"https://script.google.com/macros/s/AKfycbzDx49eM6zZOkRJyVeA1fThohj4zU1GMEI5fGT7USUJRUA8netEglFSHqKS9cCWop1w/exec?path=config",
-    "years_url":"https://script.google.com/macros/s/AKfycbzDx49eM6zZOkRJyVeA1fThohj4zU1GMEI5fGT7USUJRUA8netEglFSHqKS9cCWop1w/exec?path=years"
+    "url":"https://script.google.com/macros/s/AKfycbwPDmxfZYXnbNfTr5Fft8xoP9kSt86qKxNMJoVgr8quv_MgVGD81X7nMQYYzqEUDGJF/exec?path=questions&shuffle=1",
+    "categories_url":"https://script.google.com/macros/s/AKfycbwPDmxfZYXnbNfTr5Fft8xoP9kSt86qKxNMJoVgr8quv_MgVGD81X7nMQYYzqEUDGJF/exec?path=categories",
+    "config_url":"https://script.google.com/macros/s/AKfycbwPDmxfZYXnbNfTr5Fft8xoP9kSt86qKxNMJoVgr8quv_MgVGD81X7nMQYYzqEUDGJF/exec?path=config",
+    "years_url":"https://script.google.com/macros/s/AKfycbwPDmxfZYXnbNfTr5Fft8xoP9kSt86qKxNMJoVgr8quv_MgVGD81X7nMQYYzqEUDGJF/exec?path=years"
 }
