@@ -1,13 +1,13 @@
-function json(sheetName, parameters, cnt) {
+function json(sheetName, parameters, cnt, shuffle) {
   const spreadsheet = SpreadsheetApp.getActiveSpreadsheet()
   const sheet = spreadsheet.getSheetByName(sheetName)
   const data = sheet.getDataRange().getValues()
-  const jsonData = convertToJson(data, parameters, cnt)
+  const jsonData = convertToJson(data, parameters, cnt, shuffle)
   return ContentService
         .createTextOutput(JSON.stringify(jsonData))
         .setMimeType(ContentService.MimeType.JSON)
 }
-function convertToJson(data, parameters, cnt) {
+function convertToJson(data, parameters, cnt, shuffle) {
   const headers = data[0]
   const raw_data = data.slice(1,)
   let json = []
@@ -23,7 +23,9 @@ function convertToJson(data, parameters, cnt) {
       }
       if (!skipRow) json.push(object)
   })
-  json = shuffleArray(json)
+  if (shuffle == 1) {
+    json = shuffleArray(json)
+  }
   if (cnt > 0 && json.length >= cnt) {
     json = json.slice(0, cnt)
   }
@@ -31,7 +33,8 @@ function convertToJson(data, parameters, cnt) {
 }
 function doGet(e) {
   const path = e.parameter.path
-  const cnt = e.parameter.shuffle ? (e.parameter.cnt ? e.parameter.cnt : -1) : -1
+  const cnt = e.parameter.cnt ? e.parameter.cnt : -1
+  const shuffle = e.parameter.shuffle ? 1 : 0
   const params = e.parameters
   let parameters = {}
   for (const [key, value] of Object.entries(params)) {
@@ -39,7 +42,7 @@ function doGet(e) {
       parameters[key] = value
     }
   }
-  return json(path, parameters, cnt)
+  return json(path, parameters, cnt, shuffle)
 }
 function shuffleArray(array) {
   var i, j, temp;
